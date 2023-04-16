@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Easter</title>
+    <link rel="stylesheet" type="text/css" href="styleforCGIandFORM.css">
+</head>
+<body>
+    <div style="top: 0px; left: 0px; position: absolute;"><img src="easterbunny.jfif" alt="Easter Bunny" width="200" height="200"></div>
+    <div style="top: 0px; right: 0px; position: absolute;" ><img src="eastereggs.jfif" alt="Easter Eggs" width="200" height="200"></div>
+    <h2>Find the Easter by Year!!!</h2>
+    <form action="../cgi-bin/Test.py" method="POST">
+        <label for="theYear">Please enter the year you want to find Easter :</label>
+        <input type="text" id="theYear" name="theYear"><br>
+    <br><b>Which format do you want the answer in?</b><br>
+        <input for="theNum" type="radio" name="radbutton" value="numeric" checked><b>Numeric</b><br>
+        <input for="theNum" type="radio" name="radbutton" value="verbal"><b>Verbal</b><br>
+        <input for="theNum" type="radio" name="radbutton" value="numandver"><b>Both</b><br><br>  
+        <input type="submit" name="send" value="Send">
+        <input type="reset" name="clear" value="Clear">
+    </form>
+</body>
+</html>
